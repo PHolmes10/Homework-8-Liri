@@ -13,7 +13,7 @@ var userOption = process.argv[3];
 
 switch (userChoice) {
     case "concert-this":
-        axios.get("https://rest.bandsintown.com/artists/" + userOption + "/events?app_id=9f4af23467b3f212bd77b85d490a9d5a").then(
+        axios.get("https://rest.bandsintown.com/artists/" + userOption + "/events?app_id=" + process.env.BANDSINTOWN_ID).then(
             function (response) {
                 console.log(response.data[0].venue.name);
                 console.log(`${response.data[0].venue.city}, ${response.data[0].venue.country}`);
@@ -24,7 +24,7 @@ switch (userChoice) {
     case "spotify-this-song":
         if (userOption === undefined) {
             spotify
-                .search({ type: 'track', query: "The Sign", limit: 1 })
+                .search({ type: 'track', query: "The Sign Ace of Base", limit: 1 })
                 .then(function (response) {
                     console.log(response.tracks.items[0].artists[0].name);
                     console.log(response.tracks.items[0].name);
@@ -51,7 +51,7 @@ switch (userChoice) {
     case "movie-this":
         console.log(userOption)
         if (userOption === undefined) {
-            axios.get("http://www.omdbapi.com/?t=Mr.+Nobody&y=&plot=short&apikey=trilogy").then(
+            axios.get("http://www.omdbapi.com/?t=Mr.+Nobody&y=&plot=short&apikey=" + process.env.OMDB_ID).then(
                 function (response) {
                     console.log(response.data.Title);
                     console.log(response.data.Year);
@@ -64,7 +64,7 @@ switch (userChoice) {
                 }
             );
         } else {
-            axios.get("http://www.omdbapi.com/?t=" + userOption + "&y=&plot=short&apikey=trilogy").then(
+            axios.get("http://www.omdbapi.com/?t=" + userOption + "&y=&plot=short&apikey=" + process.env.OMDB_ID).then(
                 function (response) {
                     console.log(response.data.Title);
                     console.log(response.data.Year);
@@ -92,7 +92,7 @@ switch (userChoice) {
 
             switch (userChoice) {
                 case "concert-this":
-                    axios.get("https://rest.bandsintown.com/artists/" + userOption + "/events?app_id=9f4af23467b3f212bd77b85d490a9d5a").then(
+                    axios.get("https://rest.bandsintown.com/artists/" + userOption + "/events?app_id=" + process.env.BANDSINTOWN_ID).then(
                         function (response) {
                             console.log(response.data[0].venue.name);
                             console.log(`${response.data[0].venue.city}, ${response.data[0].venue.country}`);
@@ -129,7 +129,7 @@ switch (userChoice) {
                     break;
                 case "movie-this":
                     if (userOption === undefined) {
-                        axios.get("http://www.omdbapi.com/?t=Mr.+Nobody&y=&plot=short&apikey=trilogy").then(
+                        axios.get("http://www.omdbapi.com/?t=Mr.+Nobody&y=&plot=short&apikey=" + process.env.OMDB_ID).then(
                             function (response) {
                                 console.log(response.data.Title);
                                 console.log(response.data.Year);
@@ -142,7 +142,7 @@ switch (userChoice) {
                             }
                         );
                     } else {
-                        axios.get("http://www.omdbapi.com/?t=" + userOption + "&y=&plot=short&apikey=trilogy").then(
+                        axios.get("http://www.omdbapi.com/?t=" + userOption + "&y=&plot=short&apikey=" + process.env.OMDB_ID).then(
                             function (response) {
                                 console.log(response.data.Title);
                                 console.log(response.data.Year);
