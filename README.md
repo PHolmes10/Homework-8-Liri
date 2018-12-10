@@ -4,7 +4,7 @@ In this app, the user will be interacting with 3 different APIs, 1 for Spotify t
 
 The user can search for each by writing the following command into the terminal:
 
-        node liri.js
+**node liri.js**
 
 followed by one of these three commands:
 
@@ -18,7 +18,7 @@ Here is an example of each.
 
 * Spotify:
 
-By entering the command, node liri.js spotify-this-song song-name, this app will show you the following information:
+By entering the command, **node liri.js spotify-this-song song-name**, this app will show you the following information:
 
    * Artist(s)
    * The song's name
@@ -27,13 +27,13 @@ By entering the command, node liri.js spotify-this-song song-name, this app will
 
 ![](spotify-this-song.gif)
 
-If you perform the command with no song-name (node liri.js spotify-this-song) the app will print the above information for the song, "The Sign" by Ace of Base.
+If you perform the command with no song-name (**node liri.js spotify-this-song**) the app will print the above information for the song, "The Sign" by Ace of Base.
 
 ![](spotify-this-song-no-input.gif)
 
 * Bands In Town: 
 
-By entering the command, node liri.js concert-this artist-name, this app will show you the following information:
+By entering the command, **node liri.js concert-this artist-name**, this app will show you the following information:
 
    * Name of the venue
    * Venue location
@@ -43,7 +43,7 @@ By entering the command, node liri.js concert-this artist-name, this app will sh
 
 * OMDB:
 
-By entering the command, node liri.js movie-this movie-name, this app will show you the following information:
+By entering the command, **node liri.js movie-this movie-name**, this app will show you the following information:
 
    * Title of the movie.
    * Year the movie came out.
@@ -56,13 +56,13 @@ By entering the command, node liri.js movie-this movie-name, this app will show 
 
 ![](movie-this.gif)
 
-If you perform the command with no movie-name (node liri.js movie-this) the app will print the above information for the movie, "Mr. Nobody".
+If you perform the command with no movie-name (**node liri.js movie-this**) the app will print the above information for the movie, "Mr. Nobody".
 
 ![](movie-this-no-input.gif)
 
 In addition, by using the following command:
 
-      node liri.js do-what-it-says
+**node liri.js do-what-it-says**
 
 you can search the song, movie, or concert for whichever command is written in the random.txt file. 
 
