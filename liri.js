@@ -49,7 +49,6 @@ switch (userChoice) {
         };
         break;
     case "movie-this":
-        console.log(userOption)
         if (userOption === undefined) {
             axios.get("http://www.omdbapi.com/?t=Mr.+Nobody&y=&plot=short&apikey=" + process.env.OMDB_ID).then(
                 function (response) {
