@@ -25,11 +25,11 @@ By entering the command, **node liri.js spotify-this-song song-name**, this app 
    * A preview link of the song from Spotify
    * The album that the song is from
 
-![](spotify-this-song.gif)
+![](LIRI_GIFS/spotify-this-song.gif)
 
 If you perform the command with no song-name (**node liri.js spotify-this-song**) the app will print the above information for the song, "The Sign" by Ace of Base.
 
-![](spotify-this-song-no-input.gif)
+![](LIRI_GIFS/spotify-this-song-no-input.gif)
 
 * Bands In Town: 
 
@@ -39,7 +39,7 @@ By entering the command, **node liri.js concert-this artist-name**, this app wil
    * Venue location
    * Date of the Event (in "MM/DD/YYYY" format)
 
-![](concert-this.gif)
+![](LIRI_GIFS/concert-this.gif)
 
 * OMDB:
 
@@ -54,11 +54,11 @@ By entering the command, **node liri.js movie-this movie-name**, this app will s
    * Plot of the movie.
    * Actors in the movie.
 
-![](movie-this.gif)
+![](LIRI_GIFS/movie-this.gif)
 
 If you perform the command with no movie-name (**node liri.js movie-this**) the app will print the above information for the movie, "Mr. Nobody".
 
-![](movie-this-no-input.gif)
+![](LIRI_GIFS/movie-this-no-input.gif)
 
 In addition, by using the following command:
 
@@ -66,4 +66,4 @@ In addition, by using the following command:
 
 you can search the song, movie, or concert for whichever command is written in the random.txt file. 
 
-![](do-what-it-says.gif) 
+![](LIRI_GIFS/do-what-it-says.gif) 
